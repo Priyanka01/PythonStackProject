@@ -1,0 +1,7 @@
+from django.conf.urls import url
+from . import views           
+
+urlpatterns = [
+    url(r'^login$', views.index),
+    url(r'^sucess$',views.sucess),
+]

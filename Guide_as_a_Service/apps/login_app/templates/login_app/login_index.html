@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Site Login</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    input.search-query {
+        padding-left: 26px;
+        width: 600px;
+    }
+    
+    form.form-search {
+        position: relative;
+    }
+    
+    form.form-search:before {
+        content: '';
+        display: block;
+        width: 14px;
+        height: 14px;
+        background-image: url(http://getbootstrap.com/2.3.2/assets/img/glyphicons-halflings.png);
+        background-position: -48px 0;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        opacity: .5;
+        z-index: 1000;
+    }
+    
+    .nav_container {
+        width: 300px;
+        height: 60px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    
+    #map {
+        height: 100%;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<body>
+
+    <div style="padding:20px;" class="nav_container">
+        <form class="form-search form-inline">
+            <input type="text" class="search-query" placeholder="Search Location..." />
+        </form>
+    </div>
+
+
+</body>
+
+</html>
