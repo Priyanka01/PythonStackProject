@@ -17,9 +17,9 @@ from django.conf.urls import url,include
 # from django.contrib import admin
 
 urlpatterns = [
-    url(r'^', include('apps.login_app.urls')), 
-    url(r'^', include('apps.guide_app.urls')) ,
-    url(r'^', include('apps.tourist_app.urls')), 
+    url(r'^login_app/', include('apps.login_app.urls')), 
+    url(r'^guide_app/', include('apps.guide_app.urls')) ,
+    url(r'^tourist_app/', include('apps.tourist_app.urls')), 
     # url(r'^admin/', admin.site.urls),
 
 ]

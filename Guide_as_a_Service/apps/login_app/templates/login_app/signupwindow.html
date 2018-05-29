@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Site Login</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+</style>
+
+<body>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <div class="container">
+        <h1>Welcome!!</h1>
+        <div class="wrapper">
+            <h2>Register here!</h2>
+            <form action="register" method="POST">
+                {% csrf_token %}
+                <label for="FullName">FullName:</label>
+                <input type="text" name="name" placeholder="FullName">
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <input type="text" name="email" placeholder="email">
+                <br>
+                <br>
+                <label for="pwd">Password:</label>
+                <input type="password" name="pwd" placeholder="Password">
+                <br>
+                <br>
+                <label for="confirm_pwd">Confirm Password:</label>
+                <input type="password" name="confirm_pwd" placeholder="Confirm Password">
+                <br>
+                <br>
+                <label for="user_type">Register as a:</label>
+                <select class="form-control" name="user_type">
+                    <option>Tourist</option>
+                    <option>Guide</option>
+                </select>
+                <br>
+                <br>
+                <label for="contact">Contact:</label>
+                <input type="text" name="contact" placeholder="Contact no.">
+                <br>
+                <button class="btn btn-primary" type="submit" name="submit" value="Register">Register</button>
+            </form>
+        </div>
+        <div class="login">
+            <h2>Login!</h2>
+            <form action="login" method="POST">
+                {% csrf_token %}
+                <label for="email">Email:</label>
+                <input type="text" name="loginemail" placeholder="Email">
+                <br>
+                <br>
+                <label for="pwd">Password:</label>
+                <input type="password" name="loginpwd" placeholder="Password">
+                <br>
+                <button class="btn btn-primary" type="submit" name="submit" value="login">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

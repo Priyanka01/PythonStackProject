@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Site Login</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div>
+        <form action="#" method="POST">
+            {% csrf_token %}
+            <label for="about me">About Me:</label>
+            <input type="text" name="aboutme" placeholder="aboutme">
+            <br>
+            <br>
+            <label for="user_type">Specialities:</label>
+            <table>
+                <th>Add DropDown</th>
+                <th>Remove</th>
+                <th>Update</th>
+                <td></td>
+            </table>
+            <br>
+            <label for="user_type">Language:</label>
+            <table>
+                <th>Add DropDown</th>
+                <th>Remove</th>
+                <td></td>
+            </table>
+            <br>
+            <label for="contactlbl">Contact:</label>
+            <input type="text" name="contact" placeholder="contact">
+            <br>
+            <br>
+            <label for="desclbl">Description:</label>
+            <textarea name="description">    
+            <button class="btn btn-primary" type="submit" name="submit" value="login">Submit</button>
+            
+        </form>
+
+        Add/Remove location from map   
+        <form action="#" method="POST">
+            <table> 
+                <th>Location</th>
+                <th>Action</th>
+                <td>
+                    Country/Region 
+                    Street/PO Box/Company name/Apt./Suite/Unit/Building/Floor,etc
+                    City
+                    State/Province or Region
+                    Postal Code
+                </td>
+                <td>
+                <a href="#">Add</a>"
+                <a href="#">Remove</a>
+            </td>
+            </table>
+        </form>
+
+
+
+        
+    </div>
+</body>
+
+</html>
